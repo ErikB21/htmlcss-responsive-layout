@@ -111,6 +111,7 @@
 
 .benefit{
     background-color: var(--secondary-color);
+    padding-bottom: 2rem;
 }
 
 .benefit h2{
@@ -164,24 +165,19 @@
 
 
 
+/*REGOLE FOOTER*/
 
 
+.nav-footer{
+    background-color: var(--gray-color);
+    color: white;
+    padding: 2rem 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-footer .box{
+    text-align: center;
+    margin: 2rem 0;
+}
 
 
 /*REGOLE MEDIA QUERY*/
