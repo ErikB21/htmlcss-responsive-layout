@@ -3,3 +3,277 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*regole colori*/
+
+:root{
+    --primary-color: #3684FD;
+    --primary-color-light: #b5ddff;
+
+    --secondary-color: #9792E4;
+    --secondary-color-light: #CBC9F1;
+
+    --text-color: black;
+    --white-color: white;
+    --gray-color: #333;
+    --orange-color: #FBC15F;
+}
+
+/*REGOLE GENERALI*/
+
+.container{
+    max-width: 550px;
+    margin: auto;
+}
+
+.paddingx-2{
+    padding: 0 2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-rules{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    height: 80px;
+    padding: 1rem;
+    background-color: var(--primary-color-light);
+}
+
+
+
+/*REGOLE HEADER*/
+
+.nav-header{
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: var(--primary-color);
+}
+
+
+
+/*REGOLE INTRO MAIN*/
+
+.intro-main .card{
+    margin-bottom:1.5rem ;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    border-radius: 25px;
+}
+
+.intro-main .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+
+
+/*REGOLE PLANNING-MAIN*/
+
+.planning-main{
+    background-color: var(--secondary-color);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.planning-main .column{
+    margin: 1rem;
+    background-color: var(--primary-color-light);
+}
+
+
+/*REGOLE TESTIMONIAL-MAIN*/
+
+.testimonial .card{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.testimonial .card-image{
+    margin: 1rem;
+}
+
+.testimonial h1, .testimonial p{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+/*REGOLE BENEFIT-MAIN*/
+
+
+.benefit{
+    background-color: var(--secondary-color);
+}
+
+.benefit h2{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.benefit .card{
+    margin-bottom:1.5rem ;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    border-radius: 25px;
+}
+
+.benefit .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+
+
+/*REGOLE COMMENT-MAIN*/
+
+
+.comment .card{
+    margin-bottom:1.5rem ;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    padding: 2rem 0;
+}
+
+.comment .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+
+
+/*REGOLE STARTED-MAIN*/
+
+
+.started{
+    background-color: var(--secondary-color);
+    padding: 2rem 2rem;
+}
+
+.started .box{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*REGOLE MEDIA QUERY*/
+
+/*TABLET*/
+
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 750px;
+    }
+    
+    .intro-main .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .intro-main .card{
+        width: calc(33.333% - 1.5rem);
+    }
+
+    .intro-main .card:first-child{
+        width: calc(66.666% - 1.5rem);
+    }
+    
+    .testimonial .card{
+        display: flex;
+    }
+
+    .testimonial .card-text{
+        flex-grow:1;
+    }
+
+    .testimonial .card-image{
+        flex-shrink: 0;
+        margin: 0 4rem 0 0;
+    }
+
+    .benefit .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefit .card{
+        width: calc(49.999% - 1.5rem);
+    }
+
+    .comment .cards{
+        display: flex;
+    }
+
+    .comment .card{
+        width: calc(49.999% - 1.5rem);
+    }
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 950px;
+    }
+
+    .intro-main .card:first-child{
+        display: flex;
+    }
+
+    .intro-main .card:first-child .box{
+        width: 50%;
+    }
+
+    .planning-main .columns{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .planning-main .column{
+        width: calc(50% - 4rem);
+    }
+
+}
+
+/*DESKTOP LARGE*/
+
+
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1150px;
+    } 
+}
+
+
+
