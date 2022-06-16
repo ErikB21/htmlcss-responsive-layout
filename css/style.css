@@ -107,6 +107,10 @@
     margin-right: -0.75rem;
 }
 
+.intro-main .card:first-child{
+    padding-top: 1rem;
+}
+
 
 .btn-white{
     background-color: var(--primary-color);
@@ -127,8 +131,11 @@
 
 .image-intro-main img{
     width: 60%;
-    padding-top: 2.4rem;
+    padding-top: 2rem;
+    position: relative;
+    bottom: -5px;
 }
+
 
 
 .intro-main .card i{
@@ -216,7 +223,7 @@
 }
 
 .testimonial .card-image{
-    margin: 1rem;
+    margin: 1rem o;
 }
 
 .title-testimonial h2{
@@ -546,9 +553,15 @@
     .planning-main .column{
         width: calc(50% - 4rem);
     }
+
+    .planning-main .backcol-white{
+        width: 30%;
+    }
     
     .image-intro-main img{
         width: 100%;
+        position: relative;
+        bottom: -45px;
     }
 
     .benefit .card{
