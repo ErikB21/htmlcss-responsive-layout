@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*regole colori*/
@@ -371,6 +372,49 @@
     margin: 2rem 0;
 }
 
+.started .cards *{
+    padding-top: 2rem;
+}
+
+.started .light-color{
+    color: var(--secondary-color-light);
+}
+
+.started h3{
+    color: var(--white-color);
+}
+
+.started h2{
+    font-size: 3rem;
+    color: var(--orange-color);
+}
+
+.started p{
+    color: var(--white-color);
+    line-height: 1.5rem;
+}
+
+.started .end-main p a{
+    color: var(--white-color);
+}
+
+.started .btn-started{
+    background-color: var(--white-color);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+}
+
+.started .end-main p{
+    font-size: 0.7rem;
+}
+
+.started .end-main p i{
+    font-size: 0.3rem;
+    position: relative;
+    bottom: 2px;
+}
+
 
 
 /*REGOLE FOOTER*/
@@ -382,9 +426,14 @@
     padding: 2rem 2rem;
 }
 
-.nav-footer .box{
+.nav-footer p{
     text-align: center;
     margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.nav-footer p a{
+    color: var(--secondary-color);
 }
 
 
@@ -452,6 +501,16 @@
         padding: 3rem;
     }
 
+    .started .cards{
+        width: 60%;
+        margin: auto;
+    }
+
+    .nav-footer .container-footer {
+       width: 60%;
+       margin: auto;
+    }
+
     
 }
 
@@ -495,6 +554,17 @@
     .benefit .card{
         width:calc(33.333% - 1.5rem);
     }
+
+    .started .cards{
+        width: 40%;
+        margin: auto;
+    }
+
+    .nav-footer .container-footer {
+       width: 40%;
+       margin: auto;
+    }
+
 }
 
 /*DESKTOP LARGE*/
