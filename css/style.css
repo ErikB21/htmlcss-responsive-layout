@@ -40,9 +40,15 @@
 }
 
 .box{
-    height: 80px;
-    padding: 1rem;
-    background-color: var(--primary-color-light);
+    padding: 2rem;
+}
+
+.radius{
+    border-radius: 25px;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
@@ -53,6 +59,35 @@
     width: 100%;
     margin-bottom: 2rem;
     background-color: var(--primary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.sidebar-menu{
+    display: none;
+}
+
+.sidebar-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.sidebar-menu a{
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+.sidebar-menu .btn-blu{
+    background-color: var(--white-color);
+    padding: 0.5rem;
+    color: var(--text-color) !important;
+}
+
+.hamburger{
+    color: var(--white-color);
 }
 
 
@@ -63,12 +98,46 @@
     margin-bottom:1.5rem ;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    border-radius: 25px;
+    background-color: var(--primary-color-light);
 }
 
 .intro-main .cards{
     margin-left: -0.75rem;
     margin-right: -0.75rem;
+}
+
+
+.btn-white{
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    color: var(--white-color);
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.text-intro-main .btn-white i{
+    font-size: 1rem !important;
+    color: var(--white-color) !important;
+}
+
+.text-intro-main a{
+    text-decoration: none;
+}
+
+.image-intro-main img{
+    width: 60%;
+    padding-top: 2.4rem;
+}
+
+
+.intro-main .card i{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.intro-main .card h3{
+    color: var(--primary-color);
+    margin: 1.5rem 0;
 }
 
 
@@ -83,8 +152,58 @@
 
 .planning-main .column{
     margin: 1rem;
-    background-color: var(--primary-color-light);
 }
+
+.img-planning img{
+    width: 100%;
+}
+
+.text-planning{
+    color: var(--white-color);
+    margin: 4rem 1rem;
+}
+
+.text-planning h2{
+    margin:0 0 2rem 0;
+    font-weight: bold;
+}
+
+.backcol-white{
+    background-color: var(--white-color);
+}
+
+.text-planning-app{
+    margin: 3rem 0;
+}
+
+.text-planning-app h3{
+    margin-bottom: 2rem;
+}
+
+.text-planning-app p{
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.text-planning-app .ico-planning{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.ico-planning i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 /*REGOLE TESTIMONIAL-MAIN*/
@@ -99,9 +218,53 @@
     margin: 1rem;
 }
 
-.testimonial h1, .testimonial p{
-    text-align: center;
+.title-testimonial h2{
     padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.title-testimonial span{
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.title-testimonial p{
+    margin-bottom: 1.5rem;
+}
+
+.card-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backimg1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.backimg2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.backimg3{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.card-text{
+    color: var(--white-color);
+    font-style: italic;
+}
+
+.card-text .text-right{
+    margin-top: 1.5rem;
 }
 
 
@@ -114,21 +277,41 @@
     padding-bottom: 2rem;
 }
 
-.benefit h2{
+.benefit .title-benefit{
     text-align: center;
     padding: 2rem 0;
+    color: var(--white-color);
 }
 
 .benefit .card{
     margin-bottom:1.5rem ;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    border-radius: 25px;
+    text-align: left;
+    padding: 2rem;
+    background-color: var(--white-color);
 }
 
 .benefit .cards{
     margin-left: -0.75rem;
     margin-right: -0.75rem;
+}
+
+.card h2, .card h3{
+    color: var(--secondary-color);
+    margin: 1rem 0;
+}
+
+.card h2{
+    font-size: 2rem;
+}
+
+.btn-violet{
+    background-color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    color: var(--white-color);
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 
@@ -147,6 +330,31 @@
     margin-left: -0.75rem;
     margin-right: -0.75rem;
 }
+
+.text-comment p{
+    line-height: 2rem;
+    padding-top: 2rem;
+}
+
+.image-comment{
+    background-image: url(../img/about.jpg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.icon-comment{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
 
 
 
@@ -209,11 +417,17 @@
 
     .testimonial .card-text{
         flex-grow:1;
+        padding-top: 2rem;
     }
 
     .testimonial .card-image{
         flex-shrink: 0;
         margin: 0 4rem 0 0;
+    }
+
+    .card-text .text-right{
+        text-align: left;
+        margin-top: 1.5rem;
     }
 
     .benefit .cards{
@@ -231,7 +445,14 @@
 
     .comment .card{
         width: calc(49.999% - 1.5rem);
+        align-content: flex-end;
     }
+
+    .comment .card:nth-child(2){
+        padding: 3rem;
+    }
+
+    
 }
 
 
@@ -240,6 +461,14 @@
 @media screen and (min-width: 992px){
     .container{
         max-width: 950px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .sidebar-menu{
+        display: block;
     }
 
     .intro-main .card:first-child{
@@ -258,7 +487,14 @@
     .planning-main .column{
         width: calc(50% - 4rem);
     }
+    
+    .image-intro-main img{
+        width: 100%;
+    }
 
+    .benefit .card{
+        width:calc(33.333% - 1.5rem);
+    }
 }
 
 /*DESKTOP LARGE*/
