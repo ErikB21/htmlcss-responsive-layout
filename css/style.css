@@ -223,7 +223,7 @@
 }
 
 .testimonial .card-image{
-    margin: 1rem o;
+    margin: 0 auto;
 }
 
 .title-testimonial h2{
@@ -248,6 +248,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card-text .virgol{
+    color: var(--white-color);
+    font-size: 1rem;
 }
 
 .backimg1{
@@ -469,6 +474,7 @@
     
     .testimonial .card{
         display: flex;
+        text-align: left;
     }
 
     .testimonial .card-text{
